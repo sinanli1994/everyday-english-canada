@@ -11,13 +11,11 @@ shopping, eating out, visiting a doctor or pharmacy, and renting a home.
 
 👉 **[everyday-english-canada.vercel.app](https://everyday-english-canada.vercel.app)**
 
-Source code: [github.com/sinanli1994/everyday-english-canada](https://github.com/sinanli1994/everyday-english-canada)
-
 ## Screenshot
 
 ![Everyday English Canada screenshot](docs/screenshot.png)
 
-> Screenshot coming soon — add an image at `docs/screenshot.png` to display it here.
+*Desktop view of the phrase search, category filters, and phrase cards.*
 
 ## Features
 
