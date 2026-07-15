@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everyday English Canada</title>
+  <meta
+    name="description"
+    content="Useful English phrases with Chinese translations for shopping, dining, healthcare, renting, and other common situations in Canada."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="site-brand">Everyday English Canada</p>
+      <h1 class="site-title">Speak with confidence in everyday Canadian life.</h1>
+      <p class="site-description">
+        Find useful English phrases for shopping, dining, healthcare, renting,
+        and other common situations in Canada.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Search and category filters -->
+    <section class="controls" aria-label="Search and filter phrases">
+      <div class="search-wrap">
+        <label for="search-input" class="search-label">Search phrases</label>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search in English or 中文…"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter by category">
+        <button type="button" class="filter-btn is-active" data-category="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-category="grocery" aria-pressed="false">Grocery Store</button>
+        <button type="button" class="filter-btn" data-category="restaurant" aria-pressed="false">Restaurant</button>
+        <button type="button" class="filter-btn" data-category="health" aria-pressed="false">Doctor &amp; Pharmacy</button>
+        <button type="button" class="filter-btn" data-category="renting" aria-pressed="false">Renting a Home</button>
+      </div>
+
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+    </section>
+
+    <!-- Phrase cards are rendered here by script.js -->
+    <section aria-label="Phrase list">
+      <ul class="card-grid" id="card-grid"></ul>
+      <div class="empty-state" id="empty-state" hidden>
+        <p class="empty-title">No phrases found</p>
+        <p>Try a different word, or switch back to “All” categories.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About this project</h2>
+      <p>
+        Everyday English Canada is a small phrasebook for newcomers,
+        international students, and visitors. Instead of textbook sentences,
+        it collects the polite, natural expressions Canadians actually use —
+        at the grocery store, in restaurants, at the clinic, and when renting
+        a home. Each phrase comes with a Chinese translation and, where
+        helpful, a short note about local customs.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built by Andy Li</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
